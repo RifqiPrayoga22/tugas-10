@@ -119,10 +119,10 @@
       width: 100px;
     }
 
-    /* PERBAIKAN: pseudo-code jadi lebih kontras dan terang */
+    /* PERBAIKAN TOTAL: pseudo-code jadi sangat kontras, teks putih terang, background hitam pekat */
     pre {
-      background: #0a0e1a !important;
-      color: #f1f5f9 !important;
+      background: #0a0c10 !important;      /* hitam pekat */
+      color: #ffffff !important;           /* putih murni, tidak pucat */
       padding: 1.25rem;
       border-radius: 1rem;
       overflow-x: auto;
@@ -130,13 +130,13 @@
       font-size: 0.85rem;
       line-height: 1.5;
       margin: 1rem 0;
-      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1), 0 6px 12px -8px rgba(0,0,0,0.2);
-      text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.08), 0 6px 12px -8px rgba(0,0,0,0.3);
+      font-weight: 500;                    /* sedikit tebal agar lebih terbaca */
     }
 
-    /* Tambahan untuk memastikan teks di dalam pre tetap terang */
-    pre code, pre span, pre .token {
-      color: #f1f5f9 !important;
+    /* Pastikan semua teks di dalam pre ikut putih */
+    pre, pre * {
+      color: #ffffff !important;
     }
 
     .dartpad-embed {
