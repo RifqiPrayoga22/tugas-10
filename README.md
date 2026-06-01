@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
@@ -118,9 +119,10 @@
       width: 100px;
     }
 
+    /* PERBAIKAN: pseudo-code jadi lebih kontras dan terang */
     pre {
-      background: #0f172a;
-      color: #e2e8f0;
+      background: #0a0e1a !important;
+      color: #f1f5f9 !important;
       padding: 1.25rem;
       border-radius: 1rem;
       overflow-x: auto;
@@ -128,7 +130,13 @@
       font-size: 0.85rem;
       line-height: 1.5;
       margin: 1rem 0;
-      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.08), 0 6px 12px -8px rgba(0,0,0,0.2);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1), 0 6px 12px -8px rgba(0,0,0,0.2);
+      text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+    }
+
+    /* Tambahan untuk memastikan teks di dalam pre tetap terang */
+    pre code, pre span, pre .token {
+      color: #f1f5f9 !important;
     }
 
     .dartpad-embed {
@@ -164,6 +172,10 @@
       }
       iframe {
         height: 420px;
+      }
+      pre {
+        font-size: 0.75rem;
+        padding: 1rem;
       }
     }
   </style>
